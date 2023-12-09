@@ -73,6 +73,5 @@ function count_steps() {
 }
 
 let count = count_steps();
-console.log(count)
-console.log("GET LCM OF- "+current_node_indexed)
+console.log("GET common multiple of- " + current_node_indexed)
 
