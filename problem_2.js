@@ -37,17 +37,17 @@ function covertInput() {
 function process() {
     const input = covertInput();
     let power = 0;
-    for(let items of input) {
-    let minimum = {red:0, green:0, blue:0};
-        for(let item of items['data']) {
-            Object.keys(item).forEach(key=>{
-                if(minimum[key] < item[key]) {
+    for (let items of input) {
+        let minimum = { red: 0, green: 0, blue: 0 };
+        for (let item of items['data']) {
+            Object.keys(item).forEach(key => {
+                if (minimum[key] < item[key]) {
                     minimum[key] = item[key];
                 }
             })
         }
-        console.log(minimum["red"]* minimum["blue"] * minimum["green"])
-         power = power + (minimum["red"]* minimum["blue"] * minimum["green"])
+        console.log(minimum["red"] * minimum["blue"] * minimum["green"])
+        power = power + (minimum["red"] * minimum["blue"] * minimum["green"])
     }
     return power;
 }

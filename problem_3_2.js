@@ -115,8 +115,8 @@ for (let item in iop) {
             product = product * (+ite.check)
         }
     }
-    if(product>1)
-    iop2 = iop2 + product;
+    if (product > 1)
+        iop2 = iop2 + product;
 }
 
 console.log(iop2)
