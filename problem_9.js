@@ -1,7 +1,7 @@
 const fs = require('node:fs');
 
 
-function covertInput() {
+function covert() {
     let input = "";
     let input_cards = [];
     input = fs.readFileSync('./input_7.txt', 'utf8');
