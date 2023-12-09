@@ -47,9 +47,6 @@ console.log(next_item_list2)
 let sum = 0;
 for(let item of next_item_list2) {
     for(let it of item) {
-        if(isNaN(it[it.length-1])) {
-            console.log("here")
-        }
         sum = sum +it[it.length-1]
     }
 }
